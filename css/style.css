@@ -124,13 +124,14 @@ section{
     color: var(--bg-color);
     font-size: 10rem;
     letter-spacing: 1rem;
+    margin-right: -1rem;
 }
 .home-content .subtitle{
     color: var(--bg-color);
     font-family: var(--title-font);
     font-size: 3.5rem;
     letter-spacing: 10rem;
-    margin: -1rem 0 0 9.4rem;
+    margin-right: -10rem;
     font-weight: 100;
 }
 /* home end */
@@ -374,7 +375,7 @@ section{
     .models{
         padding-bottom: 7rem;
     }
-    .portofolio{
+    .services{
         padding-bottom: 7rem;
     }
     .contact{
@@ -401,39 +402,44 @@ section{
     }
     .navbar a{
         display: block;
-        font-size: 2rem;
+        font-size: rem;
         margin: 3rem 0;
     }
-    .home{
-        flex-direction: column;
+    .home-content .subtitle{
+        font-size: 2.1rem;
     }
-    .home-content h6{
-        font-size: 2.6rem;
-    }
-    .home-content h1{
-        font-size: 5rem;
+    .home-content .title{
+        font-size: 9rem;
     }
     .about{
         flex-direction: column-reverse;
     }
     .about-img img{
         margin-top: 4rem;
-        width: 70vw;
+        width: 50vw;
     }
-    .services h2{
+    .services-box h6{
         margin-bottom: 3rem;
     }
-    .portofolio h2{
+    .models-box h6{
         margin-bottom: 3rem;
     }
-    .portofolio-container{
+    .services-container{
         grid-template-columns: repeat(2,1fr);
     }
 }
 @media (max-width: 617px) {
-    .portofolio-container{
+    .services-container{
         grid-template-columns: 1fr;
     }
+    .home-content .title{
+        font-size: 8rem;
+    }
+    .home-content .subtitle{
+        letter-spacing: 9rem;
+        margin-right: -9rem;
+    }
+
 }
 @media (max-width: 450px){
     html{
@@ -442,8 +448,22 @@ section{
     .contact form .inpu-box input{
         width: 100%;
     }
+    .home-content .title{
+        font-size: 7rem;
+    }
+    .home-content .subtitle{
+        letter-spacing: 7.5rem;
+        margin-right: -7.5rem;
+    }
 }
 @media (max-width: 365px){
+    .home .title{
+        font-size: 6rem;
+    }
+    .home .subtitle{
+        letter-spacing: 6.5rem;
+        margin-right: -6.5rem;
+    }
     .footer{
         flex-direction: column-reverse;
     }
